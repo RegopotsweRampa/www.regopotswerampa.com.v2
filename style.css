@@ -12,7 +12,7 @@ body {
 
 /*Hamburger Icon*/
 .hamburger{
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     position: fixed;
     top: 15px;
@@ -58,7 +58,7 @@ body {
 .hero-text {
     font-style: normal;
     margin-top: 300px;
-    font-size: 30px;
+    font-size: 46px;
     overflow: hidden;
     padding: 10px;
 }
@@ -71,21 +71,24 @@ body {
 /*OVERVIEW*/
 
 .overview{
-    margin-top: 80px;
+    margin-top: 150px;
     padding: 10px;
     margin-bottom: 20px;
 }
 .headings{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 500;
 }
 .text-content{
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4f4f4f;
 }
 
 .what-i-offer{
     padding: 10px;
     margin-bottom: 20px;
+
 }
 
 .card-container{
@@ -96,17 +99,17 @@ body {
 
 .card{
     background-color: #ebebeb;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 5px;
     padding: 10px;
 }
 
 .card-heading{
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 .card-content{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
     color: #4f4f4f;
