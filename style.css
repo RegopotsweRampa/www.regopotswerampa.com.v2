@@ -8,6 +8,7 @@ body {
     font-size: 16px;
     background-color: #E9E8E5;
     margin: 10px;
+    padding: 20px;
 }
 
 /*Hamburger Icon*/
@@ -113,10 +114,83 @@ body {
     font-weight: 300;
     font-style: normal;
     color: #4f4f4f;
+
+}
+
+.why-work-with-me{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.why-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4f4f4f;
+    margin-top: 100px;
+}
+
+.portfolio{
+    padding: 10px;
+}
+
+.portfolio-header{
+    font-size: 60px;
+}
+
+.portfolio-sub-header{
+    font-size: 18px;
+    color: #8e8e8e;
+}
+
+.project-container{
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-gap: 40px;
+}
+.project-img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project:hover{
+    transform: scale(0.9, 0.9);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.category{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ababab;
+}
+.project-name{
+    font-size: 24px;
+}
+.contact-me{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-heading{
+    font-size: 24px;
+}
+.contact-text{
+    font-size: 16px;
+    font-weight: 350;
+    color: #1c1c1c;
+}
+
+.socials{
+    display: inline-flex;
+    gap: 20px;
 }
 /*MEDIA QUERIES*/
 
 @media (min-width: 768px) {
+    body{
+        padding: 20px;
+    }
     .hamburger{
         font-size: 30px;
         left: 15px;
@@ -131,12 +205,38 @@ body {
     .card-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    
 
     .card-content{
         font-size: 16px;
     }
     .card-heading{
         font-size: 18px;
+    }
+
+    .why-text{
+        font-size: 18px;
+        font-weight: 400;
+        color: #4f4f4f;
+        margin-top: 100px;
+    }
+
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-header{
+        font-size: 170px;
+    }
+    .contact-heading{
+        font-size: 30px;
+    }
+
+    .contact-text{
+        font-size: 18px ;
+    }
+    .portfolio-header{
+        font-size: 100px;
     }
 }
 
@@ -207,5 +307,31 @@ body {
 
     .card{
         border-radius: 2px solid black;
+    }
+    .why-text{
+        font-size: 24px;
+        font-weight: 400;
+        color: #4f4f4f;
+        margin-top: 100px;
+    }
+    .why-work-with-me{
+        padding: 40px 20px 20px 40px;
+    }
+
+    .project-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .portfolio-header{
+        font-size: 170px;
+    }
+    .contact-heading{
+        font-size: 50px;
+    }
+    .contact-text{
+        font-size: 24px;
+    }
+    .socials{
+        width: 100px;
+        margin-top: 20px;
     }
 }
