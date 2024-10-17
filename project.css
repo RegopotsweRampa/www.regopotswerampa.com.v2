@@ -94,6 +94,32 @@ body {
     object-fit: contain;
 }
 
+.contact-me{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-heading{
+    font-size: 24px;
+}
+.contact-text{
+    font-size: 16px;
+    font-weight: 350;
+    color: #1c1c1c;
+}
+
+.socials{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.created{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 20px;
+
+}
+
 
 @media (min-width: 768px){
     body{
@@ -103,6 +129,13 @@ body {
         font-size: 30px;
         left: 15px;
         top: 15px;
+    }
+    .contact-heading{
+        font-size: 30px;
+    }
+
+    .contact-text{
+        font-size: 18px ;
     }
 }
 
@@ -141,5 +174,23 @@ body {
     }
     .hamburger{
         display: none;
+    }
+
+    .project-title{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .contact-heading{
+        font-size: 50px;
+    }
+    #sub-heading{
+        font-size: 30px;
+    }
+    .contact-text, #text-01, .description, #bold-small{
+        font-size: 24px;
+    }
+    .socials{
+        width: 100px;
+        margin-top: 20px;
     }
 }
