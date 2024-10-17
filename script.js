@@ -10,3 +10,7 @@ function toggleMenu() {
 function redirectToProject01(){
     window.location.href = "project-01.html"
 }
+
+function redirectToHome(){
+    window.location.href = "index.html"
+}
