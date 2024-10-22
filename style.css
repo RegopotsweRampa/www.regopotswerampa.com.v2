@@ -189,7 +189,6 @@ body {
     font-size: 12px;
     font-weight: 200;
     margin-top: 20px;
-
 }
 /*MEDIA QUERIES*/
 
@@ -292,10 +291,10 @@ body {
         padding: 40px;
     }
     .headings{
-        font-size: 30px;
+        font-size: 24px;
     }
     .text-content{
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .card-container{
@@ -328,7 +327,10 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
     .portfolio-header{
-        font-size: 170px;
+        font-size: 80px;
+    }
+    .portfolio{
+                padding: 40px 20px 20px 40px;
     }
     .contact-heading{
         font-size: 50px;

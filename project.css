@@ -54,73 +54,56 @@ body {
     right: 5px;
     font-size: 20px;
 }
-
-.content{
+.case-study{
     padding: 10px;
 }
-
-.project-title{
-    text-align: center;
-    margin-top: 25%;
-    font-size: 24px;
-}
-
 .image img{
-    margin-top: 5%;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 70px;  
+}
+.image2 img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/*#sub-heading{
+.container1, .container2, .container3 {
+    display: grid;
+    grid-gap: 10px;
     margin-top: 20px;
-    font-size: 18px;
+    padding: 10px;
 }
-
-#text-01{
-    color: #555555;
-    font-weight: 200px;
-}
-
-#bold-small{
-    color: #000;
-}
-.tools{
-    margin-top: 20px;
-}
-.tools img{
-    width: 12%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-}
-
-.contact-me{
+.contact-me {
     text-align: center;
     margin-top: 50px;
 }
-.contact-heading{
+
+.contact-heading {
     font-size: 24px;
 }
-.contact-text{
+
+.contact-text {
     font-size: 16px;
     font-weight: 350;
     color: #1c1c1c;
-}*/
+}
 
-
-.socials{
+.socials {
     display: inline-flex;
     gap: 20px;
 }
 
-.created{
+.created {
     text-align: center;
     font-size: 12px;
     font-weight: 200;
     margin-top: 20px;
-
+    margin-bottom: 20px;
 }
-
 
 @media (min-width: 768px){
     body{
@@ -131,13 +114,14 @@ body {
         left: 15px;
         top: 15px;
     }
-    .contact-heading{
-        font-size: 30px;
+    .container1, .container2, .container3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contents{
+        margin-top: 50px;
+        padding: 10px;
     }
 
-    .contact-text{
-        font-size: 18px ;
-    }
 }
 
 @media (min-width: 1024px){
@@ -176,29 +160,19 @@ body {
     .hamburger{
         display: none;
     }
-
-    .project-title{
-        font-size: 60px;
-        margin-top: 30px;
+    .case-study{
+        grid-template-columns: repeat(2, 1fr);
     }
-    .contact-heading{
+    .contact-heading {
         font-size: 50px;
     }
-    #sub-heading{
-        font-size: 30px;
-    }
-    .contact-text, #text-01, .description, #bold-small{
+        
+    .contact-text {
         font-size: 24px;
     }
-    .socials{
+        
+    .socials {
         width: 100px;
         margin-top: 20px;
     }
-
-        .image img {
-            margin-top: 5%;
-            width: 50%;
-            object-fit: cover;
-            border-radius: 10px;
-        }
 }
