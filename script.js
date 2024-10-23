@@ -13,6 +13,9 @@ function redirectToProject01(){
 function redirectToProject02(){
     window.location.href = "project-02.html"
 }
+function redirectToProject03(){
+    window.location.href = "project-03.html"
+}
 
 
 function redirectToHome(){
