@@ -1,0 +1,178 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #E9E8E5;
+}
+
+/*Hamburger Icon*/
+.hamburger{
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    color: #000000;
+    
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.side-menu a{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.side-menu a:hover{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 20px;
+}
+.case-study{
+    padding: 10px;
+}
+.image img, video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 70px;  
+}
+.image2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container1, .container2, .container3 {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.contact-me {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-heading {
+    font-size: 24px;
+}
+
+.contact-text {
+    font-size: 16px;
+    font-weight: 350;
+    color: #1c1c1c;
+}
+
+.socials {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.created {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px){
+    body{
+        padding: 20px;
+    }
+    .hamburger{
+        font-size: 30px;
+        left: 15px;
+        top: 15px;
+    }
+    .container1, .container2, .container3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contents{
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .side-menu{
+        position: static;
+        width: auto;
+        height: auto;
+        padding-top: 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: none;
+    }
+    .side-menu a:first-child{
+        display: none;
+    }
+
+    .side-menu a{
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #000;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .side-menu a:hover{
+        transition: none;
+        font-size: 20px;
+        color: #424242;
+    }
+
+    .close-btn{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .case-study{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-heading {
+        font-size: 50px;
+    }
+        
+    .contact-text {
+        font-size: 24px;
+    }
+        
+    .socials {
+        width: 100px;
+        margin-top: 20px;
+    }
+}
