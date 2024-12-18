@@ -57,7 +57,7 @@ body {
 .case-study{
     padding: 10px;
 }
-.image img{
+.image img, video{
     width: 100%;
     height: auto;
     object-fit: cover;
